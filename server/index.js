@@ -46,6 +46,7 @@ const corsOptions = {
 
 //   next();
 // });
+console.log("Server Started Running..");
 
 app.use(cors(corsOptions));
 
