@@ -74,9 +74,12 @@ const login = async (req, res) => {
 };
 const logout = async (_, res) => {
   try {
-    return res.status(200).cookie("token", "", { maxAge: 0 }).json({
-      message: "Logged out successfully.",
-      success: true,
+    return res.status(200).clearCookie("token", {
+      path: "/",
+      sameSite: "None",
+      secure: process.env.NODE_ENV === "production",
+      httpOnly: true,
+      expires: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000),
     });
   } catch (error) {
     console.log(error);
