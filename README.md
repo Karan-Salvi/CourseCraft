@@ -1,6 +1,13 @@
-<h1>Demo Images</h1>
+# CourseCraft - Online Course Platform
 
+CourseCraft is an online course platform built using the MERN stack (MongoDB, Express, React, Node.js). It allows users to browse and purchase courses, and instructors can create and sell their own courses. The platform aims to offer an engaging learning experience for students and an intuitive interface for instructors.
 
+## Technologies Used
+- **Frontend:** React.js, React Router, Axios
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB
+- **Authentication:** JWT (JSON Web Tokens)
+- **Hosting:** Deployed on Vercel
 
 <h2>Student Section</h2>
 
@@ -78,3 +85,97 @@
 ![Screenshot 2025-01-03 035727](https://github.com/user-attachments/assets/a98e393c-4f01-45c9-b741-2cd36f89fde1)
 
 <br/>
+
+
+<h2>Student Section</h2>
+
+<br/>
+
+
+<br/>
+
+- Browse through a wide range of courses.
+- Add courses to the wishlist or cart.
+- Purchase courses and start learning.
+- Track progress on enrolled courses.
+- Save favorite courses for later.
+
+<h2>Instructor Section</h2>
+
+<br/>
+
+<br/>
+
+- Register as an instructor and create courses.
+- Upload course content (videos, quizzes, assignments).
+- Set course prices and promotions.
+- Manage course content and track student progress.
+- View student feedback and ratings.
+
+## Features
+- **Student:**
+  - Register and log in to the platform
+  - Browse and filter courses
+  - Add courses to cart and checkout
+  - Track course progress and watch videos
+  - Save favorite courses for later
+  - Rate and review completed courses
+
+- **Instructor:**
+  - Register as an instructor and create courses
+  - Upload course materials (videos, quizzes, assignments)
+  - Manage course content
+  - Set pricing and discounts
+  - Track student progress and receive feedback
+
+## Setup Instructions
+
+### Prerequisites
+- Node.js (v14 or higher)
+- MongoDB (local or Atlas for cloud database)
+
+### Steps to Set Up
+
+1. Clone the repository:
+
+```
+git clone https://github.com/Karan-Salvi/CourseCraft.git
+cd CourseCraft
+```
+
+2. Install Dependencies:
+
+```
+cd server
+npm install
+
+cd client
+npm install
+```
+
+3. Create `.env` file in server Folder and copy-paste the following template, filling in your values:
+
+```
+PORT =
+FRONTEND_URL=
+MONGO_URI =
+SECRET_KEY=
+API_KEY =
+API_SECRET =
+CLOUD_NAME =
+STRIPE_SECRET_KEY=
+WEBHOOK_ENDPOINT_SECRET=
+```
+
+4. Run the code:
+
+```
+cd server
+npm run dev
+
+cd client
+npm run dev
+```
+
+---
+
