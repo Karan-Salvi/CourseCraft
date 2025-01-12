@@ -2,6 +2,10 @@
 
 CourseCraft is an online course platform built using the MERN stack (MongoDB, Express, React, Node.js). It allows users to browse and purchase courses, and instructors can create and sell their own courses. The platform aims to offer an engaging learning experience for students and an intuitive interface for instructors.
 
+## Demo
+Check out the live demo of the project here: [View Demo](https://coursecraft-ten.vercel.app/)
+
+
 ## Technologies Used
 - **Frontend:** React.js, React Router, Axios
 - **Backend:** Node.js, Express.js
