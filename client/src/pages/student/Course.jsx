@@ -25,7 +25,8 @@ const Course = ({course}) => {
               <AvatarImage src={course.creator?.photoUrl || "https://github.com/shadcn.png"} alt="@shadcn" />
               <AvatarFallback>CN</AvatarFallback>
             </Avatar>
-            <h1 className="font-medium text-sm">{course.creator?.name}</h1>
+           {/* <h1 className="font-medium text-sm">{course.creator?.name}</h1>*/}
+           
           </div>
           <Badge className={'bg-blue-600 text-white px-2 py-1 text-xs rounded-full'}>
             {course.courseLevel}
