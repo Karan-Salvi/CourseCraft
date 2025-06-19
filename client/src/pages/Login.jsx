@@ -19,6 +19,7 @@ import { Loader2 } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { toast } from "sonner";
+import { FaEyeSlash, FaEye } from "react-icons/fa";
 
 const Login = () => {
   const [signupInput, setSignupInput] = useState({
@@ -27,6 +28,10 @@ const Login = () => {
     password: "",
   });
   const [loginInput, setLoginInput] = useState({ email: "", password: "" });
+
+  const [showPassword, setShowPassword] = useState(false);
+
+  const [isLoginTab, setIsLoginTab] = useState(true);
 
   const [
     registerUser,
@@ -46,6 +51,8 @@ const Login = () => {
       isSuccess: loginIsSuccess,
     },
   ] = useLoginUserMutation();
+
+  console.log("Users Login Data is : ", loginData);
   const navigate = useNavigate();
 
   const changeInputHandler = (e, type) => {
@@ -64,17 +71,17 @@ const Login = () => {
   };
 
   useEffect(() => {
-    if(registerIsSuccess && registerData){
-      toast.success(registerData.message || "Signup successful.")
+    if (registerIsSuccess && registerData) {
+      toast.success(registerData.message || "Signup successful.");
     }
-    if(registerError){
+    if (registerError) {
       toast.error(registerError.data.message || "Signup Failed");
     }
-    if(loginIsSuccess && loginData){
+    if (loginIsSuccess && loginData) {
       toast.success(loginData.message || "Login successful.");
       navigate("/");
     }
-    if(loginError){ 
+    if (loginError) {
       toast.error(loginError.data.message || "login Failed");
     }
   }, [
@@ -87,18 +94,16 @@ const Login = () => {
   ]);
 
   return (
-    <div className="flex items-center w-full justify-center mt-20">
+    <div className="flex items-center w-full justify-center custom_background min-h-screen ">
       <Tabs defaultValue="login" className="w-[400px]">
-        <TabsList className="grid w-full grid-cols-2">
-          <TabsTrigger value="signup">Signup</TabsTrigger>
-          <TabsTrigger value="login">Login</TabsTrigger>
-        </TabsList>
         <TabsContent value="signup">
           <Card>
             <CardHeader>
-              <CardTitle>Signup</CardTitle>
-              <CardDescription>
-                Create a new account and click signup when you're done.
+              <CardTitle className="text-center font-extrabold text-2xl my-1">
+                Create an Account
+              </CardTitle>
+              <CardDescription className="text-center text-sm text-gray-500 mb-6">
+                Let's get you all set up so you can start your learnin journey!
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-2">
@@ -126,18 +131,36 @@ const Login = () => {
               </div>
               <div className="space-y-1">
                 <Label htmlFor="username">Password</Label>
-                <Input
-                  type="password"
-                  name="password"
-                  value={signupInput.password}
-                  onChange={(e) => changeInputHandler(e, "signup")}
-                  placeholder="Eg. xyz"
-                  required="true"
-                />
+
+                <div style={{ position: "relative" }}>
+                  <Input
+                    type={showPassword ? "text" : "password"}
+                    name="password"
+                    value={signupInput.password}
+                    onChange={(e) => changeInputHandler(e, "signup")}
+                    placeholder="Eg. xyz"
+                    required="true"
+                  />
+                  <span
+                    onClick={() => setShowPassword(!showPassword)}
+                    style={{
+                      position: "absolute",
+                      right: "10px",
+                      top: "50%",
+                      transform: "translateY(-50%)",
+                      cursor: "pointer",
+                      fontSize: "14px",
+                      color: "#666",
+                    }}
+                  >
+                    {showPassword ? <FaEyeSlash /> : <FaEye />}
+                  </span>
+                </div>
               </div>
             </CardContent>
-            <CardFooter>
+            <CardFooter className="flex-col space-y-5">
               <Button
+                className="w-full"
                 disabled={registerIsLoading}
                 onClick={() => handleRegistration("signup")}
               >
@@ -150,15 +173,28 @@ const Login = () => {
                   "Signup"
                 )}
               </Button>
+
+              <TabsList className="w-full ">
+                <TabsTrigger
+                  value="login"
+                  className="w-full"
+                  onClick={() => setIsLoginTab(false)}
+                >
+                  Already Have an Account ?{" "}
+                  <span className="ml-1 text-blue-600 font-bold">SignIn</span>
+                </TabsTrigger>
+              </TabsList>
             </CardFooter>
           </Card>
         </TabsContent>
         <TabsContent value="login">
           <Card>
             <CardHeader>
-              <CardTitle>Login</CardTitle>
-              <CardDescription>
-                Login your password here. After signup, you'll be logged in.
+              <CardTitle className="text-center font-extrabold text-lg my-1">
+                Welcome Back!
+              </CardTitle>
+              <CardDescription className="text-center text-sm text-gray-500 mb-5">
+                Welcome back! Please fill your details.
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-2">
@@ -175,18 +211,35 @@ const Login = () => {
               </div>
               <div className="space-y-1">
                 <Label htmlFor="new">Password</Label>
-                <Input
-                  type="password"
-                  name="password"
-                  value={loginInput.password}
-                  onChange={(e) => changeInputHandler(e, "login")}
-                  placeholder="Eg. xyz"
-                  required="true"
-                />
+                <div style={{ position: "relative" }}>
+                  <Input
+                    type={showPassword ? "text" : "password"}
+                    name="password"
+                    value={loginInput.password}
+                    onChange={(e) => changeInputHandler(e, "login")}
+                    placeholder="Eg. xyz"
+                    required="true"
+                  />
+                  <span
+                    onClick={() => setShowPassword(!showPassword)}
+                    style={{
+                      position: "absolute",
+                      right: "10px",
+                      top: "50%",
+                      transform: "translateY(-50%)",
+                      cursor: "pointer",
+                      fontSize: "14px",
+                      color: "#666",
+                    }}
+                  >
+                    {showPassword ? <FaEyeSlash /> : <FaEye />}
+                  </span>
+                </div>
               </div>
             </CardContent>
-            <CardFooter>
+            <CardFooter className="flex-col space-y-5">
               <Button
+                className="w-full"
                 disabled={loginIsLoading}
                 onClick={() => handleRegistration("login")}
               >
@@ -199,6 +252,12 @@ const Login = () => {
                   "Login"
                 )}
               </Button>
+              <TabsList className="w-full ">
+                <TabsTrigger value="signup" className="w-full">
+                  Don't have an account?{" "}
+                  <span className="ml-1 text-blue-600 font-bold">SignUp</span>
+                </TabsTrigger>
+              </TabsList>
             </CardFooter>
           </Card>
         </TabsContent>

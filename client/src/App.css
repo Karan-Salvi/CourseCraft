@@ -1,0 +1,60 @@
+.custom_background {
+  /* background: #3f5efb;
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 12%,
+    rgba(252, 70, 107, 1) 78%
+  ); */
+
+  background: #3f5efb;
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 12%,
+    rgba(252, 70, 107, 1) 62%
+  );
+
+  background: #7187de;
+  background: radial-gradient(
+    circle,
+    rgba(113, 135, 222, 1) 39%,
+    rgba(252, 70, 107, 1) 96%
+  );
+
+  background: #eeaeca;
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+
+  background: #eeaeca;
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 43%,
+    rgba(148, 187, 233, 1) 100%
+  );
+
+  background: #ffffff;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 43%,
+    rgba(148, 158, 233, 1) 100%
+  );
+
+  background: #ffffff;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 43%,
+    rgba(91, 107, 227, 1) 100%
+  );
+
+  background: #ffffff;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 43%,
+    rgba(166, 174, 237, 1) 100%
+  );
+
+  background: #ffffff;
+background: radial-gradient(circle, rgba(255, 255, 255, 1) 43%, rgba(166, 174, 237, 1) 94%);
+}

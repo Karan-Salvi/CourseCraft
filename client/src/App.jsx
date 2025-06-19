@@ -23,6 +23,14 @@ import {
 } from "./components/ProtectedRoutes";
 import PurchaseCourseProtectedRoute from "./components/PurchaseCourseProtectedRoute";
 import { ThemeProvider } from "./components/ThemeProvider";
+import Header from "./components/Hero/Header";
+import Hero from "./components/Hero/Hero";
+import Features from "./components/Hero/Features";
+import HowItWorks from "./components/Hero/HowItWorks";
+import Testimonials from "./components/Hero/Testimonials";
+import CTA from "./components/Hero/CTA";
+import Footer from "./components/Hero/Footer";
+import Navbar from "./components/Navbar";
 
 const appRouter = createBrowserRouter([
   {
@@ -33,8 +41,15 @@ const appRouter = createBrowserRouter([
         path: "/",
         element: (
           <>
-            <HeroSection />
-            <Courses />
+            <div className="min-h-screen bg-white">
+              <Header />
+              <Hero />
+              <Features />
+              <HowItWorks />
+              <Testimonials />
+              <CTA />
+              <Footer />
+            </div>
           </>
         ),
       },
@@ -48,11 +63,7 @@ const appRouter = createBrowserRouter([
       },
       {
         path: "my-learning",
-        element: (
-          <ProtectedRoute>
-            <MyLearning />
-          </ProtectedRoute>
-        ),
+        element: <MyLearning />,
       },
       {
         path: "profile",
@@ -65,9 +76,9 @@ const appRouter = createBrowserRouter([
       {
         path: "course/search",
         element: (
-          <ProtectedRoute>
+          <>
             <SearchPage />
-          </ProtectedRoute>
+          </>
         ),
       },
       {
@@ -83,7 +94,7 @@ const appRouter = createBrowserRouter([
         element: (
           <ProtectedRoute>
             <PurchaseCourseProtectedRoute>
-            <CourseProgress />
+              <CourseProgress />
             </PurchaseCourseProtectedRoute>
           </ProtectedRoute>
         ),
@@ -132,7 +143,7 @@ function App() {
   return (
     <main>
       <ThemeProvider>
-      <RouterProvider router={appRouter} />
+        <RouterProvider router={appRouter} />
       </ThemeProvider>
     </main>
   );

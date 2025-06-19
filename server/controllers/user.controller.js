@@ -74,13 +74,20 @@ const login = async (req, res) => {
 };
 const logout = async (_, res) => {
   try {
-    return res.status(200).clearCookie("token", {
-      path: "/",
-      sameSite: "None",
-      secure: process.env.NODE_ENV === "production",
-      httpOnly: true,
-      expires: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000),
-    });
+    const isProduction = process.env.NODE_ENV === "production";
+
+    return res
+      .status(200)
+      .clearCookie("token", {
+        path: "/",
+        sameSite: isProduction ? "None" : "Lax",
+        secure: isProduction,
+        httpOnly: true,
+      })
+      .json({
+        success: true,
+        message: "Logged out successfully",
+      });
   } catch (error) {
     console.log(error);
     return res.status(500).json({
@@ -119,6 +126,13 @@ const updateProfile = async (req, res) => {
     const { name } = req.body;
     const profilePhoto = req.file;
 
+    if (!name || !profilePhoto) {
+      return res.status(400).json({
+        success: false,
+        message: "All fields are required.",
+      });
+    }
+
     const user = await User.findById(userId);
     if (!user) {
       return res.status(404).json({
@@ -126,20 +140,34 @@ const updateProfile = async (req, res) => {
         success: false,
       });
     }
+
+    console.log("User found:", user);
+
     // extract public id of the old image from the url is it exists;
     if (user.photoUrl) {
       const publicId = user.photoUrl.split("/").pop().split(".")[0]; // extract public id
       deleteMediaFromCloudinary(publicId);
     }
 
+    console.log("Profile photo path:", profilePhoto.path);
+
     // upload new photo
     const cloudResponse = await uploadMedia(profilePhoto.path);
     const photoUrl = cloudResponse.secure_url;
+
+    console.log("Uploaded photo URL:", photoUrl);
 
     const updatedData = { name, photoUrl };
     const updatedUser = await User.findByIdAndUpdate(userId, updatedData, {
       new: true,
     }).select("-password");
+
+    if (!updatedUser) {
+      return res.status(404).json({
+        message: "User not found",
+        success: false,
+      });
+    }
 
     return res.status(200).json({
       success: true,
