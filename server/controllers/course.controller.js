@@ -142,7 +142,7 @@ const editCourse = async (req, res) => {
         await deleteMediaFromCloudinary(publicId); // delete old image
       }
       // upload a thumbnail on clourdinary
-      courseThumbnail = await uploadMedia(thumbnail.path);
+      courseThumbnail = await uploadMedia(thumbnail.buffer, thumbnail.originalname);
     }
 
     const updateData = {
