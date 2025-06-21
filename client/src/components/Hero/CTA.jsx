@@ -25,7 +25,7 @@ const CTA = () => {
           </h2>
           <p className="text-xl text-blue-100 mb-12 max-w-3xl mx-auto leading-relaxed">
             Join thousands of educators who have already made the switch to
-            CourseCraft. Start your free trial today and see the difference in
+            SkillCrest. Start your free trial today and see the difference in
             just minutes.
           </p>
 

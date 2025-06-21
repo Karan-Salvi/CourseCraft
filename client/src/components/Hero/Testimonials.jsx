@@ -12,7 +12,7 @@ const Testimonials = () => {
       image:
         "https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=300",
       content:
-        "CourseCraft has revolutionized how I deliver content to my students. The interactive features and analytics help me understand each student's progress better than ever before.",
+        " SkillCrest has revolutionized how I deliver content to my students. The interactive features and analytics help me understand each student's progress better than ever before.",
       rating: 5,
     },
     {
@@ -32,7 +32,7 @@ const Testimonials = () => {
       image:
         "https://images.pexels.com/photos/3778876/pexels-photo-3778876.jpeg?auto=compress&cs=tinysrgb&w=300",
       content:
-        "We've seen a 40% increase in training completion rates since switching to CourseCraft. The gamification features keep our employees engaged throughout their learning journey.",
+        "We've seen a 40% increase in training completion rates since switching to  SkillCrest. The gamification features keep our employees engaged throughout their learning journey.",
       rating: 5,
     },
   ];
@@ -57,7 +57,7 @@ const Testimonials = () => {
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Join thousands of educators who have transformed their teaching
-            experience with CourseCraft.
+            experience with SkillCrest.
           </p>
         </div>
 

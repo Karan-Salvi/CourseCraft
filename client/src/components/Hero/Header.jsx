@@ -63,7 +63,7 @@ const Header = () => {
             <div className="bg-gradient-to-r from-blue-600 to-indigo-600 p-2 rounded-lg">
               <BookOpen className="h-6 w-6 text-white" />
             </div>
-            <span className="text-xl font-bold text-gray-900">CourseCraft</span>
+            <span className="text-xl font-bold text-gray-900"> SkillCrest</span>
           </div>
 
           {/* Desktop Navigation */}

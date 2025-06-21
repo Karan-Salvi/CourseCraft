@@ -74,7 +74,7 @@ export function AppSidebar({ user }) {
                 <BookOpen className="h-4 w-4 text-white" />
               </div>
               <span className="text-lg font-bold text-gray-900">
-                CourseCraft
+                 SkillCrest
               </span>
             </div>
           </SidebarGroupLabel>

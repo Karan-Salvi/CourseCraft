@@ -34,9 +34,7 @@ const SearchPage = () => {
             <div className="bg-gradient-to-r from-blue-600 to-indigo-600 p-2 rounded-lg">
               <BookOpen className="h-4 w-4 text-white" />
             </div>
-            <span className="text-2xl font-bold text-gray-900">
-              CourseCraft
-            </span>
+            <span className="text-2xl font-bold text-gray-900">SkillCrest</span>
           </div>
           <Filter
             setSearch={setSearch}

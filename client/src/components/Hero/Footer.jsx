@@ -55,7 +55,7 @@ const Footer = () => {
               <div className="bg-gradient-to-r from-blue-600 to-indigo-600 p-2 rounded-lg">
                 <BookOpen className="h-6 w-6 text-white" />
               </div>
-              <span className="text-xl font-bold">CourseCraft</span>
+              <span className="text-xl font-bold"> SkillCrest</span>
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed">
               Empowering educators and learners worldwide with modern, intuitive
@@ -66,7 +66,7 @@ const Footer = () => {
             <div className="space-y-3 mb-6">
               <div className="flex items-center space-x-3">
                 <Mail className="h-4 w-4 text-blue-400" />
-                <span className="text-gray-400">hello@CourseCraft.com</span>
+                <span className="text-gray-400">hello@ SkillCrest.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-4 w-4 text-blue-400" />
@@ -142,7 +142,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col sm:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © 2024 CourseCraft. All rights reserved.
+            © 2024 SkillCrest. All rights reserved.
           </p>
           <div className="mt-4 sm:mt-0 flex items-center space-x-6">
             <span className="text-gray-400 text-sm">

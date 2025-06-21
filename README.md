@@ -1,12 +1,13 @@
-# CourseCraft - Online Course Platform
+# SkillCrest - Online Course Platform
 
-CourseCraft is an online course platform built using the MERN stack (MongoDB, Express, React, Node.js). It allows users to browse and purchase courses, and instructors can create and sell their own courses. The platform aims to offer an engaging learning experience for students and an intuitive interface for instructors.
+SkillCrest is an online course platform built using the MERN stack (MongoDB, Express, React, Node.js). It allows users to browse and purchase courses, and instructors can create and sell their own courses. The platform aims to offer an engaging learning experience for students and an intuitive interface for instructors.
 
 ## Demo
-Check out the live demo of the project here: [View Demo](https://coursecraft-ten.vercel.app/)
 
+Check out the live demo of the project here: [View Demo](https:// SkillCrest-ten.vercel.app/)
 
 ## Technologies Used
+
 - **Frontend:** React.js, React Router, Axios
 - **Backend:** Node.js, Express.js
 - **Database:** MongoDB
@@ -79,7 +80,6 @@ Check out the live demo of the project here: [View Demo](https://coursecraft-ten
 
 ![Screenshot 2025-01-03 035622](https://github.com/user-attachments/assets/974e9bed-016f-4c2b-9ecf-f9fb23c60be2)
 
-
 <br/>
 
 ![Screenshot 2025-01-03 035709](https://github.com/user-attachments/assets/b94254e8-3c00-48f0-9198-03a3a53b3f55)
@@ -90,11 +90,9 @@ Check out the live demo of the project here: [View Demo](https://coursecraft-ten
 
 <br/>
 
-
 <h2>Student Section</h2>
 
 <br/>
-
 
 <br/>
 
@@ -117,7 +115,9 @@ Check out the live demo of the project here: [View Demo](https://coursecraft-ten
 - View student feedback and ratings.
 
 ## Features
+
 - **Student:**
+
   - Register and log in to the platform
   - Browse and filter courses
   - Add courses to cart and checkout
@@ -135,6 +135,7 @@ Check out the live demo of the project here: [View Demo](https://coursecraft-ten
 ## Setup Instructions
 
 ### Prerequisites
+
 - Node.js (v14 or higher)
 - MongoDB (local or Atlas for cloud database)
 
@@ -143,8 +144,8 @@ Check out the live demo of the project here: [View Demo](https://coursecraft-ten
 1. Clone the repository:
 
 ```
-git clone https://github.com/Karan-Salvi/CourseCraft.git
-cd CourseCraft
+git clone https://github.com/Karan-Salvi/ SkillCrest.git
+cd  SkillCrest
 ```
 
 2. Install Dependencies:
@@ -182,4 +183,3 @@ npm run dev
 ```
 
 ---
-
