@@ -1,7 +1,8 @@
 const dotenv = require("dotenv");
 const cloudinary = require("cloudinary").v2;
-const fs = require("fs");
-dotenv.config({});
+const streamifier = require("streamifier");
+
+dotenv.config();
 
 cloudinary.config({
   api_key: process.env.API_KEY,
@@ -9,25 +10,33 @@ cloudinary.config({
   cloud_name: process.env.CLOUD_NAME,
 });
 
-const uploadMedia = async (file) => {
+const uploadMedia = async (fileBuffer, originalname) => {
   try {
-    const uploadResponse = await cloudinary.uploader.upload(file, {
-      resource_type: "auto",
-    });
-    console.log("File uploaded to Cloudinary:");
-    fs.unlinkSync(file, () => {
-      console.log("file Removed from server");
+    const result = await new Promise((resolve, reject) => {
+      const stream = cloudinary.uploader.upload_stream(
+        {
+          resource_type: "auto",
+          folder: "uploads", // optional: customize your folder
+          use_filename: true,
+          unique_filename: false,
+          public_id: originalname ? originalname.split(".")[0] : undefined,
+        },
+        (error, result) => {
+          if (error) return reject(error);
+          resolve(result);
+        }
+      );
+      streamifier.createReadStream(fileBuffer).pipe(stream);
     });
 
-    return uploadResponse;
+    console.log("File uploaded to Cloudinary:", result.secure_url);
+    return result;
   } catch (error) {
-    fs.unlinkSync(file, () => {
-      console.log("file Removed from server");
-    });
-    console.log(error);
+    console.error("Upload error:", error);
     return null;
   }
 };
+
 const deleteMediaFromCloudinary = async (publicId) => {
   try {
     await cloudinary.uploader.destroy(publicId);

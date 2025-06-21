@@ -149,13 +149,16 @@ const updateProfile = async (req, res) => {
       deleteMediaFromCloudinary(publicId);
     }
 
-    console.log("Profile photo path:", profilePhoto.path);
+    console.log("Profile photo path:", profilePhoto);
 
-    // upload new photo
-    const cloudResponse = await uploadMedia(profilePhoto.path);
-    const photoUrl = cloudResponse.secure_url;
+    //  new photo
+    const cloudResponse = await uploadMedia(
+      profilePhoto.buffer,
+      profilePhoto.originalname
+    );
+    const photoUrl = cloudResponse?.secure_url;
 
-    console.log("Uploaded photo URL:", photoUrl);
+    console.log("ed photo URL:", photoUrl);
 
     const updatedData = { name, photoUrl };
     const updatedUser = await User.findByIdAndUpdate(userId, updatedData, {
