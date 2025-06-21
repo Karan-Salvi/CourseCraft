@@ -1,3 +1,4 @@
+import Loader from "@/components/Loader";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardTitle } from "@/components/ui/card";
@@ -43,7 +44,7 @@ const CourseProgress = () => {
 
   const [currentLecture, setCurrentLecture] = useState(null);
 
-  if (isLoading) return <p>Loading...</p>;
+  if (isLoading) return <Loader/>;
   if (isError) return <p>Failed to load course details</p>;
 
   console.log(data);

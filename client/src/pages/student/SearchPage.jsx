@@ -1,53 +1,56 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Filter from "./Filter";
 import SearchResult from "./SearchResult";
 import { Skeleton } from "@/components/ui/skeleton";
 import { useGetSearchCourseQuery } from "@/features/api/courseApi";
 import { Link, useSearchParams } from "react-router-dom";
-import { AlertCircle } from "lucide-react";
+import { AlertCircle, BookOpen } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Courses from "./Courses";
 
 const SearchPage = () => {
-  const [searchParams] = useSearchParams();
-  const query = searchParams.get("query");
   const [selectedCategories, setSelectedCatgories] = useState([]);
   const [sortByPrice, setSortByPrice] = useState("");
+  const [search, setSearch] = useState("");
 
-  const { data, isLoading } = useGetSearchCourseQuery({
-    searchQuery: query,
-    categories: selectedCategories,
-    sortByPrice,
-  });
+  useEffect(() => {
+    console.log("Selected Categories:", selectedCategories);
+    console.log("Sort By Price:", sortByPrice);
+    console.log("Search Query:", search);
+  }, [selectedCategories, sortByPrice, search]);
 
-  const isEmpty = !isLoading && data?.courses.length === 0;
-
-  const handleFilterChange = (categories, price) => {
-    setSelectedCatgories(categories);
-    setSortByPrice(price);
-  };
   return (
     <div className="max-w-7xl mx-auto p-4 md:p-8">
-      <div className="my-6">
+      {/* <div className="my-6">
         <h1 className="font-bold text-xl md:text-2xl">result for "{query}"</h1>
         <p>
           Showing results for{""}
           <span className="text-blue-800 font-bold italic">{query}</span>
         </p>
-      </div>
-      <div className="flex flex-col md:flex-row gap-10">
-        <Filter handleFilterChange={handleFilterChange} />
-        <div className="flex-1">
-          {isLoading ? (
-            Array.from({ length: 3 }).map((_, idx) => (
-              <CourseSkeleton key={idx} />
-            ))
-          ) : isEmpty ? (
-            <CourseNotFound />
-          ) : (
-            <Courses />
-          )}
+      </div> */}
+      <div className="flex flex-col items-center gap-10">
+        <div className="w-full flex justify-end ">
+          <div className="flex items-center space-x-2">
+            <div className="bg-gradient-to-r from-blue-600 to-indigo-600 p-2 rounded-lg">
+              <BookOpen className="h-4 w-4 text-white" />
+            </div>
+            <span className="text-2xl font-bold text-gray-900">
+              CourseCraft
+            </span>
+          </div>
+          <Filter
+            setSearch={setSearch}
+            setSortByPrice={setSortByPrice}
+            setSelectedCatgories={setSelectedCatgories}
+            selectedCategories={selectedCategories}
+          />
         </div>
+
+        <Courses
+          search={search}
+          category={selectedCategories}
+          sortBy={sortByPrice}
+        />
       </div>
     </div>
   );
@@ -55,9 +58,9 @@ const SearchPage = () => {
 
 export default SearchPage;
 
-const CourseNotFound = () => {
+export const CourseNotFound = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-32 dark:bg-gray-900 p-6">
+    <div className="flex flex-col items-center justify-center min-h-32 w-full dark:bg-gray-900 p-6">
       <AlertCircle className="text-red-500 h-16 w-16 mb-4" />
       <h1 className="font-bold text-2xl md:text-4xl text-gray-800 dark:text-gray-200 mb-2">
         Course Not Found

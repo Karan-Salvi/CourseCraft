@@ -63,7 +63,11 @@ const appRouter = createBrowserRouter([
       },
       {
         path: "my-learning",
-        element: <MyLearning />,
+        element: (
+          <ProtectedRoute>
+            <MyLearning />
+          </ProtectedRoute>
+        ),
       },
       {
         path: "profile",
@@ -74,7 +78,7 @@ const appRouter = createBrowserRouter([
         ),
       },
       {
-        path: "course/search",
+        path: "courses",
         element: (
           <>
             <SearchPage />
