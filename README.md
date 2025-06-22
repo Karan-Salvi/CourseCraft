@@ -17,6 +17,75 @@ Check out the live demo of the project here: [View Demo](https:// SkillCrest-ten
 <h2>Student Section</h2>
 
 <br/>
+![Screenshot 2025-06-23 000915](https://github.com/user-attachments/assets/8d0c31a7-1b6c-4249-b0bb-3ab0337023c1)
+<br/>
+![Screenshot 2025-06-23 000948](https://github.com/user-attachments/assets/0b142d0d-a616-4dea-9cab-5dfadb55b43e)
+<br/>
+![Screenshot 2025-06-23 001020](https://github.com/user-attachments/assets/e73aca5b-9778-4a49-82f3-dfb53b44c0a9)
+<br/>
+![Screenshot 2025-06-23 001106](https://github.com/user-attachments/assets/e8ac52c7-dec9-4679-8acb-a5d0bfbf36e6)
+<br/>
+![Screenshot 2025-06-23 001137](https://github.com/user-attachments/assets/32e731e9-a922-4178-b58a-17dece0ece6d)
+<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br/>
 
 ![Screenshot 2025-01-03 034102](https://github.com/user-attachments/assets/70701da8-7e8b-4546-ad27-b7d7e984696b)
 
