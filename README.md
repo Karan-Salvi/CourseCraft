@@ -4,7 +4,7 @@ SkillCrest is an online course platform built using the MERN stack (MongoDB, Exp
 
 ## Demo
 
-Check out the live demo of the project here: [View Demo](https:// SkillCrest-ten.vercel.app/)
+Check out the live demo of the project here: [https:// SkillCrest-ten.vercel.app/](https://skillcrest.vercel.app/)
 
 ## Technologies Used
 
