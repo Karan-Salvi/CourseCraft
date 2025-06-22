@@ -14,150 +14,116 @@ Check out the live demo of the project here: [View Demo](https:// SkillCrest-ten
 - **Authentication:** JWT (JSON Web Tokens)
 - **Hosting:** Deployed on Vercel
 
+<h2>Landing Page</h2>
+
+![Screenshot 2025-06-23 000915](https://github.com/user-attachments/assets/8d0c31a7-1b6c-4249-b0bb-3ab0337023c1)
+![Screenshot 2025-06-23 000948](https://github.com/user-attachments/assets/0b142d0d-a616-4dea-9cab-5dfadb55b43e)
+![Screenshot 2025-06-23 001020](https://github.com/user-attachments/assets/e73aca5b-9778-4a49-82f3-dfb53b44c0a9)
+![Screenshot 2025-06-23 001106](https://github.com/user-attachments/assets/e8ac52c7-dec9-4679-8acb-a5d0bfbf36e6)
+![Screenshot 2025-06-23 001137](https://github.com/user-attachments/assets/32e731e9-a922-4178-b58a-17dece0ece6d)
+
+
+
 <h2>Student Section</h2>
 
-<br/>
-![Screenshot 2025-06-23 000915](https://github.com/user-attachments/assets/8d0c31a7-1b6c-4249-b0bb-3ab0337023c1)
-<br/>
-![Screenshot 2025-06-23 000948](https://github.com/user-attachments/assets/0b142d0d-a616-4dea-9cab-5dfadb55b43e)
-<br/>
-![Screenshot 2025-06-23 001020](https://github.com/user-attachments/assets/e73aca5b-9778-4a49-82f3-dfb53b44c0a9)
-<br/>
-![Screenshot 2025-06-23 001106](https://github.com/user-attachments/assets/e8ac52c7-dec9-4679-8acb-a5d0bfbf36e6)
-<br/>
-![Screenshot 2025-06-23 001137](https://github.com/user-attachments/assets/32e731e9-a922-4178-b58a-17dece0ece6d)
-<br/>
+![Screenshot 2025-06-23 002557](https://github.com/user-attachments/assets/37705039-a306-460c-b0a9-88ced8a53a54)
 
+![Screenshot 2025-06-23 002603](https://github.com/user-attachments/assets/b1ccb537-2942-44b0-a96d-5a02519cd69c)
 
 
+![Screenshot 2025-06-23 001837](https://github.com/user-attachments/assets/a58be330-cfca-47a6-87e6-8645752c7056)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<br/>
-
-![Screenshot 2025-01-03 034102](https://github.com/user-attachments/assets/70701da8-7e8b-4546-ad27-b7d7e984696b)
-
-<br/>
-
-![Screenshot 2025-01-03 034224](https://github.com/user-attachments/assets/bca40e4f-f337-4cc0-bae7-1ee196777188)
-
-<br/>
-
-![Screenshot 2025-01-03 034337](https://github.com/user-attachments/assets/68b5916e-6e24-4105-afdb-208184303e16)
-
-<br/>
-
-![Screenshot 2025-01-03 034546](https://github.com/user-attachments/assets/e7af2020-6372-4f7f-bde3-e57717fb35db)
-
-<br/>
-
-![Screenshot 2025-01-03 034620](https://github.com/user-attachments/assets/fede77cd-9b09-4b55-9de9-3fd21f9b6c68)
-
-<br/>
-
-![Screenshot 2025-01-03 034729](https://github.com/user-attachments/assets/a486e4c2-9474-40a6-bc96-20c8c5b37545)
-
-<br/>
+![Screenshot 2025-06-23 001926](https://github.com/user-attachments/assets/8b50b5f3-5ba2-4142-afa9-e07c29589b7e)
 
 ![Screenshot 2025-01-03 034817](https://github.com/user-attachments/assets/4df6d4f8-7e03-4eb4-8530-29b5e7fdc57e)
 
-<br/>
+![Screenshot 2025-06-23 002004](https://github.com/user-attachments/assets/b040a313-75e0-44c3-8e46-ada3eb8851ed)
 
-![Screenshot 2025-01-03 034957](https://github.com/user-attachments/assets/0d0db95f-1770-44ea-bbd9-393762b98521)
+![Screenshot 2025-06-23 002706](https://github.com/user-attachments/assets/fc1650bb-dd65-4432-a745-8cd1f2ecd822)
 
-<br/>
+![Screenshot 2025-06-23 002509](https://github.com/user-attachments/assets/aad14995-5d4e-4580-9d70-f3e6921ac349)
 
-![Screenshot 2025-01-03 035038](https://github.com/user-attachments/assets/4bf8e24d-a499-47f2-a72f-ed8c637f67a2)
 
-<br/>
 
 <h2>Instructor Section</h2>
 
+![Screenshot 2025-06-23 002145](https://github.com/user-attachments/assets/fabf6279-30b2-4208-b4ff-8545672dee2e)
+
+![Screenshot 2025-06-23 002302](https://github.com/user-attachments/assets/bcde50bd-361c-4b0e-93a6-f85d138e4949)
+
+![Screenshot 2025-06-23 002335](https://github.com/user-attachments/assets/98017194-947d-43ea-b343-78f65d20799e)
+
+![Screenshot 2025-06-23 002400](https://github.com/user-attachments/assets/d7f3cd81-8912-40ff-b16f-60b32879df6b)
+
+![Screenshot 2025-06-23 002409](https://github.com/user-attachments/assets/6869ad72-7a1b-4fbc-8d09-ddc5f257d7ff)
+
+![Screenshot 2025-06-23 002420](https://github.com/user-attachments/assets/4852ab38-dac9-4279-bbeb-28f2b5923f38)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <br/>
 
-![Screenshot 2025-01-03 035135](https://github.com/user-attachments/assets/bb24ea68-2ba8-4934-9ad6-c11f4cfa059d)
 
 <br/>
 
-![Screenshot 2025-01-03 035200](https://github.com/user-attachments/assets/8ee05a4c-23b6-4ccb-a0a9-3f61c786b5e9)
 
-<br/>
 
-![Screenshot 2025-01-03 035219](https://github.com/user-attachments/assets/b40c96cf-0c64-4470-a615-03792bcc5682)
 
-<br/>
-
-![Screenshot 2025-01-03 035237](https://github.com/user-attachments/assets/29f76ca4-a475-49fe-a8c9-1961a6d36439)
-
-<br/>
-
-![Screenshot 2025-01-03 035555](https://github.com/user-attachments/assets/875e43df-4efd-44ec-9fcf-6d9b0b932ff3)
-
-<br/>
-
-![Screenshot 2025-01-03 035622](https://github.com/user-attachments/assets/974e9bed-016f-4c2b-9ecf-f9fb23c60be2)
-
-<br/>
-
-![Screenshot 2025-01-03 035709](https://github.com/user-attachments/assets/b94254e8-3c00-48f0-9198-03a3a53b3f55)
-
-<br/>
-
-![Screenshot 2025-01-03 035727](https://github.com/user-attachments/assets/a98e393c-4f01-45c9-b741-2cd36f89fde1)
-
-<br/>
 
 <h2>Student Section</h2>
 
