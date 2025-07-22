@@ -2,9 +2,22 @@
 
 SkillCrest is an online course platform built using the MERN stack (MongoDB, Express, React, Node.js). It allows users to browse and purchase courses, and instructors can create and sell their own courses. The platform aims to offer an engaging learning experience for students and an intuitive interface for instructors.
 
-## Demo
+### 🔗 Demo Link
 
-Check out the live demo of the project here: [https:// skillcrest.vercel.app/](https://skillcrest.vercel.app/)
+Checkout the live demo of CartLoop:
+
+👉  [https:// skillcrest.vercel.app/](https://skillcrest.vercel.app)
+
+---
+
+### ⭐ Give a Star
+
+If you found this project helpful or inspiring, please consider giving it a star on GitHub 🌟
+
+👉 [https://github.com/SkillCrest](https://github.com/Karan-Salvi/SkillCrest)
+
+
+---
 
 ## Technologies Used
 
@@ -218,3 +231,37 @@ npm run dev
 ```
 
 ---
+
+
+## 📦 Future Improvements
+ 
+- 🛠️ Docker support for containerization  
+- 🧪 Unit & integration tests (Jest + Supertest)    
+
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions! Feel free to:
+
+- Fork this repo  
+- Create a branch  
+- Submit a Pull Request  
+
+---
+
+## 📝 License
+
+Licensed under the [MIT License](LICENSE).
+
+---
+
+## 📧 Contact
+
+For support or collaboration:
+
+- ✉️ Email: karansalviwork@gmail.com  
+- 🌐 Portfolio: [KaranSalvi.com](https://karansalvi.vercel.app/)  
+- 📦 GitHub: [KaranSalvi](https://github.com/Karan-Salvi)  
+
