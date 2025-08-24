@@ -31,6 +31,8 @@ If you found this project helpful or inspiring, please consider giving it a star
 
 <img width="2990" height="auto" alt="skillcrest vercel app_" src="https://github.com/user-attachments/assets/31478fcb-1c80-4088-abf7-a26e06a3c0ac" />
 
+
+
 <h2>Student Section</h2>
 
 ![Screenshot 2025-06-23 002557](https://github.com/user-attachments/assets/37705039-a306-460c-b0a9-88ced8a53a54)
@@ -38,13 +40,15 @@ If you found this project helpful or inspiring, please consider giving it a star
 ![Screenshot 2025-06-23 002603](https://github.com/user-attachments/assets/b1ccb537-2942-44b0-a96d-5a02519cd69c)
 
 
-![Screenshot 2025-06-23 001837](https://github.com/user-attachments/assets/a58be330-cfca-47a6-87e6-8645752c7056)
+<img width="2990" height="auto" alt="skillcrest vercel app_" src="https://github.com/user-attachments/assets/a58be330-cfca-47a6-87e6-8645752c7056" />
+<img width="2990" height="auto" alt="skillcrest vercel app_" src="https://github.com/user-attachments/assets/8b50b5f3-5ba2-4142-afa9-e07c29589b7e" />
 
-![Screenshot 2025-06-23 001926](https://github.com/user-attachments/assets/8b50b5f3-5ba2-4142-afa9-e07c29589b7e)
 
 ![Screenshot 2025-01-03 034817](https://github.com/user-attachments/assets/4df6d4f8-7e03-4eb4-8530-29b5e7fdc57e)
 
-![Screenshot 2025-06-23 002004](https://github.com/user-attachments/assets/b040a313-75e0-44c3-8e46-ada3eb8851ed)
+<img width="2990" height="auto" alt="skillcrest vercel app_" src="https://github.com/user-attachments/assets/b040a313-75e0-44c3-8e46-ada3eb8851ed" />
+
+
 
 ![Screenshot 2025-06-23 002706](https://github.com/user-attachments/assets/fc1650bb-dd65-4432-a745-8cd1f2ecd822)
 
