@@ -29,13 +29,7 @@ If you found this project helpful or inspiring, please consider giving it a star
 
 <h2>Landing Page</h2>
 
-![Screenshot 2025-06-23 000915](https://github.com/user-attachments/assets/8d0c31a7-1b6c-4249-b0bb-3ab0337023c1)
-![Screenshot 2025-06-23 000948](https://github.com/user-attachments/assets/0b142d0d-a616-4dea-9cab-5dfadb55b43e)
-![Screenshot 2025-06-23 001020](https://github.com/user-attachments/assets/e73aca5b-9778-4a49-82f3-dfb53b44c0a9)
-![Screenshot 2025-06-23 001106](https://github.com/user-attachments/assets/e8ac52c7-dec9-4679-8acb-a5d0bfbf36e6)
-![Screenshot 2025-06-23 001137](https://github.com/user-attachments/assets/32e731e9-a922-4178-b58a-17dece0ece6d)
-
-
+<img width="2990" height="auto" alt="skillcrest vercel app_" src="https://github.com/user-attachments/assets/31478fcb-1c80-4088-abf7-a26e06a3c0ac" />
 
 <h2>Student Section</h2>
 
